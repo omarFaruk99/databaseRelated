@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import NotFound from "../NotFound/NotFound";
 import Home from "../Pages/Home";
 import InventoryTable from "../Pages/Inventory/InventoryTable";
+import OrganizationStructure from "../Pages/Organization/OrganizationStructure";
 
 export const router: any = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ export const router: any = createBrowserRouter([
       {
         path: "/inventory",
         element: <InventoryTable />,
+      },
+      {
+        path: "/organization",
+        element: <OrganizationStructure />,
       },
     ],
   },
