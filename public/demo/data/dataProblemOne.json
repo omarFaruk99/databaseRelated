@@ -1,0 +1,104 @@
+{
+  "inventory": {
+    "products": [
+      {
+        "sku": "PROD-001",
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "supplier": {
+          "id": "SUPP-05",
+          "name": "TechGlobal Inc.",
+          "rating": 4.8
+        },
+        "variants": [
+          {
+            "color": "Black",
+            "price": 129.99,
+            "stock": 45,
+            "discount": {
+              "type": "percentage",
+              "value": 15
+            }
+          },
+          {
+            "color": "Silver",
+            "price": 139.99,
+            "stock": 22,
+            "discount": null
+          }
+        ],
+        "reviews": {
+          "average": 4.5,
+          "count": 156
+        },
+        "status": "Active"
+      },
+      {
+        "sku": "PROD-002",
+        "name": "Bluetooth Speaker",
+        "category": "Electronics",
+        "supplier": {
+          "id": "SUPP-12",
+          "name": "AudioTech Ltd.",
+          "rating": 4.6
+        },
+        "variants": [
+          {
+            "color": "Blue",
+            "price": 89.99,
+            "stock": 15,
+            "discount": {
+              "type": "fixed",
+              "value": 10
+            }
+          },
+          {
+            "color": "Red",
+            "price": 99.99,
+            "stock": 8,
+            "discount": null
+          }
+        ],
+        "reviews": {
+          "average": 4.2,
+          "count": 89
+        },
+        "status": "Active"
+      },
+      {
+        "sku": "PROD-003",
+        "name": "Smart Watch",
+        "category": "Wearables",
+        "supplier": {
+          "id": "SUPP-08",
+          "name": "GadgetWorld",
+          "rating": 4.4
+        },
+        "variants": [
+          {
+            "color": "Black",
+            "price": 199.99,
+            "stock": 30,
+            "discount": null
+          },
+          {
+            "color": "Gold",
+            "price": 249.99,
+            "stock": 12,
+            "discount": {
+              "type": "percentage",
+              "value": 20
+            }
+          }
+        ],
+        "reviews": {
+          "average": 4.7,
+          "count": 210
+        },
+        "status": "Active"
+      }
+    ],
+    "total_products": 245,
+    "low_stock_threshold": 30
+  }
+}
