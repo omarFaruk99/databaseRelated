@@ -1,6 +1,7 @@
 import { Column } from "primereact/column";
-import { DataTable } from "primereact/datatable";
+import { DataTable, DataTableExpandedRows } from "primereact/datatable";
 import { Tag } from "primereact/tag";
+import { useState } from "react";
 import { Employee } from "../OrganizationStructure";
 import ProjectsTable from "./ProjectsTable";
 
@@ -9,12 +10,25 @@ interface MembersTableProps {
 }
 
 const MembersTable = ({ members }: MembersTableProps) => {
+  const [expandedProjects, setExpandedProjects] =
+    useState<DataTableExpandedRows>({});
+
+  const handleRowToggle = (e: { data: DataTableExpandedRows }) => {
+    if (e.data && !Array.isArray(e.data)) {
+      setExpandedProjects(e.data);
+    }
+  };
+
   return (
     <DataTable
       value={members}
       dataKey="employee_id"
+      expandedRows={expandedProjects}
+      onRowToggle={handleRowToggle}
       rowExpansionTemplate={(employee: Employee) => (
-        <ProjectsTable projects={employee.projects} />
+        <div className="p-3">
+          <ProjectsTable projects={employee.projects} />
+        </div>
       )}
     >
       <Column expander style={{ width: "3rem" }} />

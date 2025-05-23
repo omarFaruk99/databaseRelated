@@ -20,11 +20,105 @@
                     "name": "Cloud Migration",
                     "status": "Behind Schedule",
                     "completion": 65
+                  },
+                  {
+                    "project_id": "P-2024-02",
+                    "name": "Firewall Upgrade",
+                    "status": "On Track",
+                    "completion": 30
+                  }
+                ]
+              },
+              {
+                "employee_id": "E-1002",
+                "name": "Mike Chen",
+                "role": "DevOps Engineer",
+                "skills": ["Docker", "Kubernetes", "Azure"],
+                "projects": [
+                  {
+                    "project_id": "P-2024-03",
+                    "name": "CI/CD Pipeline",
+                    "status": "Completed",
+                    "completion": 100
                   }
                 ]
               }
             ],
             "budget": 250000
+          },
+          {
+            "team_id": "T-DEV",
+            "members": [
+              {
+                "employee_id": "E-1003",
+                "name": "Emma Wilson",
+                "role": "Frontend Developer",
+                "skills": ["React", "TypeScript", "CSS"],
+                "projects": [
+                  {
+                    "project_id": "P-2024-04",
+                    "name": "Admin Dashboard",
+                    "status": "On Track",
+                    "completion": 80
+                  }
+                ]
+              }
+            ],
+            "budget": 180000
+          }
+        ]
+      },
+      {
+        "dept_id": "D-HR",
+        "name": "Human Resources",
+        "head_count": 8,
+        "teams": [
+          {
+            "team_id": "T-RECRUIT",
+            "members": [
+              {
+                "employee_id": "E-2001",
+                "name": "Alex Brown",
+                "role": "Recruiter",
+                "skills": ["Hiring", "Onboarding", "Interviewing"],
+                "projects": [
+                  {
+                    "project_id": "P-2024-05",
+                    "name": "Campus Recruitment",
+                    "status": "Behind Schedule",
+                    "completion": 20
+                  }
+                ]
+              }
+            ],
+            "budget": 120000
+          }
+        ]
+      },
+      {
+        "dept_id": "D-FIN",
+        "name": "Finance",
+        "head_count": 5,
+        "teams": [
+          {
+            "team_id": "T-ACCT",
+            "members": [
+              {
+                "employee_id": "E-3001",
+                "name": "David Lee",
+                "role": "Accountant",
+                "skills": ["QuickBooks", "Tax Filing", "Auditing"],
+                "projects": [
+                  {
+                    "project_id": "P-2024-06",
+                    "name": "Annual Audit",
+                    "status": "On Track",
+                    "completion": 50
+                  }
+                ]
+              }
+            ],
+            "budget": 90000
           }
         ]
       }
