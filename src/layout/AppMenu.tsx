@@ -22,6 +22,11 @@ const AppMenu = () => {
           icon: "pi pi-fw pi-database",
           to: "/organization",
         },
+        {
+          label: "Problem Three",
+          icon: "pi pi-fw pi-database",
+          to: "/academicRecords",
+        },
       ],
     },
   ];

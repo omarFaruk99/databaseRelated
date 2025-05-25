@@ -1,0 +1,98 @@
+{
+  "academic_records": {
+    "semester": "Spring 2024",
+    "courses": [
+      {
+        "course_code": "CS-401",
+        "title": "Advanced Algorithms",
+        "faculty": {
+          "instructor": "Dr. Michael Chen",
+          "department": "Computer Science"
+        },
+        "schedule": {
+          "time": "MWF 10:00-11:30",
+          "room": "SCI-205"
+        },
+        "enrollment": {
+          "current": 28,
+          "capacity": 35
+        },
+        "prerequisites": ["CS-301", "MATH-201"],
+        "status": "Open"
+      },
+      {
+        "course_code": "MATH-301",
+        "title": "Linear Algebra",
+        "faculty": {
+          "instructor": "Dr. Sarah Johnson",
+          "department": "Mathematics"
+        },
+        "schedule": {
+          "time": "TTH 13:00-14:30",
+          "room": "MATH-101"
+        },
+        "enrollment": {
+          "current": 35,
+          "capacity": 35
+        },
+        "prerequisites": ["MATH-201"],
+        "status": "Closed"
+      },
+      {
+        "course_code": "PHYS-201",
+        "title": "Classical Mechanics",
+        "faculty": {
+          "instructor": "Dr. Alan Turing",
+          "department": "Physics"
+        },
+        "schedule": {
+          "time": "MWF 14:00-15:30",
+          "room": "PHYS-305"
+        },
+        "enrollment": {
+          "current": 20,
+          "capacity": 30
+        },
+        "prerequisites": ["PHYS-101", "MATH-201"],
+        "status": "Open"
+      },
+      {
+        "course_code": "CS-301",
+        "title": "Data Structures",
+        "faculty": {
+          "instructor": "Dr. Grace Hopper",
+          "department": "Computer Science"
+        },
+        "schedule": {
+          "time": "TTH 09:00-10:30",
+          "room": "SCI-110"
+        },
+        "enrollment": {
+          "current": 30,
+          "capacity": 30
+        },
+        "prerequisites": ["CS-101"],
+        "status": "Waitlist"
+      },
+      {
+        "course_code": "ENG-101",
+        "title": "Introduction to Literature",
+        "faculty": {
+          "instructor": "Dr. Jane Austen",
+          "department": "English"
+        },
+        "schedule": {
+          "time": "MWF 11:00-12:30",
+          "room": "HUM-202"
+        },
+        "enrollment": {
+          "current": 25,
+          "capacity": 40
+        },
+        "prerequisites": [],
+        "status": "Open"
+      }
+    ],
+    "total_enrolled": 1540
+  }
+}
