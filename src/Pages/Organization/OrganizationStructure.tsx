@@ -2,7 +2,6 @@ import { Checkbox } from "primereact/checkbox";
 import { Column } from "primereact/column";
 import { DataTable, DataTableExpandedRows } from "primereact/datatable";
 import { Dropdown } from "primereact/dropdown";
-import { InputText } from "primereact/inputtext";
 import { ProgressBar } from "primereact/progressbar";
 import { useEffect, useMemo, useState } from "react";
 import TeamsTable from "./components/TeamsTable";
@@ -38,7 +37,7 @@ export interface Department {
 
 const OrganizationStructure = () => {
   const [departments, setDepartments] = useState<Department[]>([]);
-  const [globalFilter, setGlobalFilter] = useState<string>("");
+  // const [globalFilter, setGlobalFilter] = useState<string>("");
   const [expandedDepartments, setExpandedDepartments] =
     useState<DataTableExpandedRows>({});
   const [expandedTeams, setExpandedTeams] = useState<DataTableExpandedRows>({});
@@ -109,11 +108,11 @@ const OrganizationStructure = () => {
     <div className="card p-4">
       <div className="flex justify-content-between mb-4">
         <h2>Organization Structure</h2>
-        <InputText
+        {/* <InputText
           placeholder="Filter by skills/projects..."
           value={globalFilter}
           onChange={(e) => setGlobalFilter(e.target.value)}
-        />
+        /> */}
       </div>
       <div className="flex gap-4 mb-4">
         {/* Skills Dropdown */}
@@ -161,7 +160,7 @@ const OrganizationStructure = () => {
       <DataTable
         value={filteredDepartments}
         dataKey="dept_id"
-        globalFilter={globalFilter}
+        // globalFilter={globalFilter}
         expandedRows={expandedDepartments}
         onRowToggle={(e) => {
           if (e.data && !Array.isArray(e.data)) setExpandedDepartments(e.data);
