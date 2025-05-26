@@ -8,14 +8,9 @@ const AppMenu = () => {
       icon: "pi pi-home",
       items: [
         {
-          label: "Home",
-          icon: "pi pi-fw pi-home",
-          to: "/",
-        },
-        {
           label: "Problem one",
           icon: "pi pi-fw pi-database",
-          to: "/inventory",
+          to: "/",
         },
         {
           label: "Problem Two",
@@ -26,6 +21,11 @@ const AppMenu = () => {
           label: "Problem Three",
           icon: "pi pi-fw pi-database",
           to: "/academicRecords",
+        },
+        {
+          label: "Problem Four",
+          icon: "pi pi-fw pi-database",
+          to: "/stockPortfolio",
         },
       ],
     },

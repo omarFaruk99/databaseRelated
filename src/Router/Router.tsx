@@ -2,9 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
 import NotFound from "../NotFound/NotFound";
 import AcademicRecordsTable from "../Pages/Academic Records/AcademicRecordsTable";
-import Home from "../Pages/Home";
 import InventoryTable from "../Pages/Inventory/InventoryTable";
 import OrganizationStructure from "../Pages/Organization/OrganizationStructure";
+import PortfolioPage from "../Pages/Portfolio/PortfolioPage";
 
 export const router: any = createBrowserRouter([
   {
@@ -13,8 +13,8 @@ export const router: any = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       {
-        path: "/",
-        element: <Home />,
+        index: true, // This makes it the default route
+        element: <InventoryTable />,
       },
       {
         path: "/inventory",
@@ -27,6 +27,10 @@ export const router: any = createBrowserRouter([
       {
         path: "/academicRecords",
         element: <AcademicRecordsTable />,
+      },
+      {
+        path: "/stockPortfolio",
+        element: <PortfolioPage />,
       },
     ],
   },

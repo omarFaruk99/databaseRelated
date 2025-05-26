@@ -1,0 +1,152 @@
+{
+  "portfolio": {
+    "investor_id": "INV-7765",
+    "holdings": [
+      {
+        "asset_id": "ST-005",
+        "symbol": "AAPL",
+        "transactions": [
+          {
+            "date": "2023-01-15",
+            "type": "BUY",
+            "quantity": 100,
+            "price": 143.25,
+            "fee": 9.99
+          },
+          {
+            "date": "2024-02-20",
+            "type": "SELL",
+            "quantity": 40,
+            "price": 188.4,
+            "fee": 12.5
+          },
+          {
+            "date": "2024-03-10",
+            "type": "BUY",
+            "quantity": 50,
+            "price": 175.3,
+            "fee": 8.75
+          }
+        ],
+        "current_price": 192.75
+      },
+      {
+        "asset_id": "ST-006",
+        "symbol": "MSFT",
+        "transactions": [
+          {
+            "date": "2023-05-20",
+            "type": "BUY",
+            "quantity": 80,
+            "price": 245.6,
+            "fee": 12.0
+          },
+          {
+            "date": "2024-01-15",
+            "type": "SELL",
+            "quantity": 30,
+            "price": 320.75,
+            "fee": 15.25
+          }
+        ],
+        "current_price": 335.4
+      },
+      {
+        "asset_id": "ST-007",
+        "symbol": "GOOGL",
+        "transactions": [
+          {
+            "date": "2023-03-10",
+            "type": "BUY",
+            "quantity": 25,
+            "price": 102.5,
+            "fee": 7.5
+          },
+          {
+            "date": "2023-11-15",
+            "type": "BUY",
+            "quantity": 15,
+            "price": 118.3,
+            "fee": 5.25
+          },
+          {
+            "date": "2024-02-05",
+            "type": "SELL",
+            "quantity": 10,
+            "price": 135.8,
+            "fee": 6.0
+          }
+        ],
+        "current_price": 142.6
+      },
+      {
+        "asset_id": "ST-008",
+        "symbol": "AMZN",
+        "transactions": [
+          {
+            "date": "2023-07-12",
+            "type": "BUY",
+            "quantity": 12,
+            "price": 125.4,
+            "fee": 5.0
+          },
+          {
+            "date": "2024-01-22",
+            "type": "BUY",
+            "quantity": 8,
+            "price": 145.2,
+            "fee": 4.5
+          }
+        ],
+        "current_price": 158.9
+      },
+      {
+        "asset_id": "ST-009",
+        "symbol": "TSLA",
+        "transactions": [
+          {
+            "date": "2023-09-05",
+            "type": "BUY",
+            "quantity": 5,
+            "price": 250.0,
+            "fee": 8.0
+          },
+          {
+            "date": "2024-03-15",
+            "type": "SELL",
+            "quantity": 2,
+            "price": 180.5,
+            "fee": 5.5
+          }
+        ],
+        "current_price": 175.8
+      },
+      {
+        "asset_id": "ST-010",
+        "symbol": "NVDA",
+        "transactions": [
+          {
+            "date": "2023-04-18",
+            "type": "BUY",
+            "quantity": 8,
+            "price": 280.0,
+            "fee": 7.0
+          },
+          {
+            "date": "2023-12-10",
+            "type": "BUY",
+            "quantity": 4,
+            "price": 450.0,
+            "fee": 6.5
+          }
+        ],
+        "current_price": 520.0
+      }
+    ],
+    "benchmarks": {
+      "sp500_return": 14.3,
+      "risk_free_rate": 4.2,
+      "volatility": 8.1
+    }
+  }
+}
