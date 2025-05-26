@@ -1,0 +1,136 @@
+{
+  "factory": {
+    "products": [
+      {
+        "product_id": "MOTOR-X1",
+        "materials": [
+          {
+            "material_id": "STEEL-5K",
+            "units_required": 4.5,
+            "waste_factor": 0.15
+          },
+          {
+            "material_id": "COPPER-2K",
+            "units_required": 2.0,
+            "waste_factor": 0.1
+          }
+        ],
+        "labor": {
+          "hours": 8.5,
+          "cost_per_hour": 32.5
+        }
+      },
+      {
+        "product_id": "BATTERY-L9",
+        "materials": [
+          {
+            "material_id": "LITHIUM-3K",
+            "units_required": 1.8,
+            "waste_factor": 0.2
+          },
+          {
+            "material_id": "PLASTIC-1K",
+            "units_required": 3.2,
+            "waste_factor": 0.05
+          }
+        ],
+        "labor": {
+          "hours": 6.0,
+          "cost_per_hour": 28.0
+        }
+      },
+      {
+        "product_id": "WIRE-H4",
+        "materials": [
+          {
+            "material_id": "COPPER-2K",
+            "units_required": 1.2,
+            "waste_factor": 0.08
+          },
+          {
+            "material_id": "RUBBER-1K",
+            "units_required": 0.5,
+            "waste_factor": 0.02
+          }
+        ],
+        "labor": {
+          "hours": 3.5,
+          "cost_per_hour": 20.0
+        }
+      },
+      {
+        "product_id": "SCREEN-T5",
+        "materials": [
+          {
+            "material_id": "GLASS-2K",
+            "units_required": 2.5,
+            "waste_factor": 0.1
+          },
+          {
+            "material_id": "PLASTIC-1K",
+            "units_required": 1.0,
+            "waste_factor": 0.05
+          }
+        ],
+        "labor": {
+          "hours": 5.0,
+          "cost_per_hour": 25.0
+        }
+      }
+    ],
+    "resources": {
+      "STEEL-5K": {
+        "stock": 2450,
+        "unit_cost": 12.75,
+        "lead_time": 14
+      },
+      "COPPER-2K": {
+        "stock": 1200,
+        "unit_cost": 8.5,
+        "lead_time": 10
+      },
+      "LITHIUM-3K": {
+        "stock": 800,
+        "unit_cost": 45.0,
+        "lead_time": 21
+      },
+      "PLASTIC-1K": {
+        "stock": 3500,
+        "unit_cost": 2.2,
+        "lead_time": 7
+      },
+      "RUBBER-1K": {
+        "stock": 2000,
+        "unit_cost": 3.5,
+        "lead_time": 5
+      },
+      "GLASS-2K": {
+        "stock": 1500,
+        "unit_cost": 6.8,
+        "lead_time": 12
+      }
+    },
+    "orders": [
+      {
+        "order_qty": 500,
+        "due_date": "2024-05-30"
+      },
+      {
+        "order_qty": 200,
+        "due_date": "2024-06-15"
+      },
+      {
+        "order_qty": 1000,
+        "due_date": "2024-07-10"
+      },
+      {
+        "order_qty": 300,
+        "due_date": "2024-06-01"
+      },
+      {
+        "order_qty": 750,
+        "due_date": "2024-08-20"
+      }
+    ]
+  }
+}

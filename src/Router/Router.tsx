@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
 import NotFound from "../NotFound/NotFound";
 import AcademicRecordsTable from "../Pages/Academic Records/AcademicRecordsTable";
+import FactoryPage from "../Pages/Factory/FactoryPage";
 import InventoryTable from "../Pages/Inventory/InventoryTable";
 import OrganizationStructure from "../Pages/Organization/OrganizationStructure";
 import PortfolioPage from "../Pages/Portfolio/PortfolioPage";
@@ -36,6 +37,10 @@ export const router: any = createBrowserRouter([
       {
         path: "/warehouse",
         element: <FifthProblemDataTable />,
+      },
+      {
+        path: "/factory",
+        element: <FactoryPage />,
       },
     ],
   },
