@@ -5,6 +5,7 @@ import AcademicRecordsTable from "../Pages/Academic Records/AcademicRecordsTable
 import InventoryTable from "../Pages/Inventory/InventoryTable";
 import OrganizationStructure from "../Pages/Organization/OrganizationStructure";
 import PortfolioPage from "../Pages/Portfolio/PortfolioPage";
+import FifthProblemDataTable from "../Pages/Warehouse/FifthProblemDataTable";
 
 export const router: any = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export const router: any = createBrowserRouter([
       {
         path: "/stockPortfolio",
         element: <PortfolioPage />,
+      },
+      {
+        path: "/warehouse",
+        element: <FifthProblemDataTable />,
       },
     ],
   },
