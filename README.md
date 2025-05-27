@@ -1,46 +1,98 @@
-# Getting Started with Create React App
+# Project Documentation: Datatable Tasks - Intern Selopia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This project is a React-based application that demonstrates various datatable functionalities, including nested data handling, dynamic calculations, and conditional rendering. It addresses six distinct problems, each focusing on different aspects of data manipulation and visualization.
 
-In the project directory, you can run:
+## Requirements Breakdown
 
-### `yarn start`
+### Problem 1: Inventory Management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Features**:
+  - Display products with expandable variants.
+  - Show stock status with warnings for low stock.
+  - Include review stars and restock actions.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Problem 2: Organization Structure
 
-### `yarn test`
+- **Features**:
+  - Hierarchical display of departments, teams, and members.
+  - Budget utilization progress bars.
+  - Filtering by skills and project status.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Problem 3: Academic Records
 
-### `yarn build`
+- **Features**:
+  - Course listings with enrollment status and prerequisites.
+  - Waitlist functionality for full courses.
+  - Filtering by department and course status.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Problem 4: Portfolio Management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Features**:
+  - Calculates cost basis, realized/unrealized P/L.
+  - Color-coded returns based on benchmarks.
+  - High conviction filter.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Problem 5: Warehouse Orders
 
-### `yarn eject`
+- **Features**:
+  - Calculates order totals with discounts and taxes.
+  - Conditional formatting for low inventory.
+  - Bulk discounts for large orders.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Problem 6: Factory Production
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Features**:
+  - Calculates material requirements and production costs.
+  - Reorder alerts based on lead time.
+  - Color-coded material status.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Code Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **`src/Pages/`**: Contains components for each problem.
+- **`public/demo/data/`**: Stores JSON data files for each problem.
+- **`src/Router/`**: Defines routes for each page.
+- **`src/layout/`**: Includes shared components like the app menu.
 
-## Learn More
+## Key Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Row Expansion**: Nested data is displayed using expandable rows.
+- **Dynamic Calculations**: Real-time updates based on user interactions.
+- **Conditional Styling**: Visual cues for status, stock levels, etc.
+- **Custom Filters**: Global and column-specific filters.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Data Flow
+
+1. **Fetch Data**: Each page fetches data from a JSON file.
+2. **Process Data**: Calculations and transformations are applied.
+3. **Render UI**: Data is displayed in tables with expandable sections.
+4. **User Interactions**: Filters, sorting, and actions update the UI.
+
+## Usage Instructions
+
+1. Clone the repository.
+2. Install dependencies: `npm install`.
+3. Run the app: `npm start`.
+4. Navigate to different pages via the app menu.
+
+## API Endpoints (Mock Data)
+
+- **Problem 1**: `/demo/data/dataProblemOne.json`
+- **Problem 2**: `/demo/data/dataProblemTwo.json`
+- **Problem 3**: `/demo/data/dataProblemThree.json`
+- **Problem 4**: `/demo/data/dataProblemFour.json`
+- **Problem 5**: `/demo/data/warehouse.json`
+- **Problem 6**: `/demo/data/dataProblemSix.json`
+
+## Custom Components
+
+- **`AppMenu`**: Dynamic menu based on the current route.
+- **`DataTable`**: Customized tables with expandable rows and filters.
+- **`ProgressBar`**: Visual indicators for progress and utilization.
+
+## Styling and Theming
+
+- Uses PrimeReact components for a consistent UI.
+- Custom CSS for conditional styling and responsive design.
+
