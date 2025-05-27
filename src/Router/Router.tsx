@@ -6,7 +6,7 @@ import FactoryPage from "../Pages/Factory/FactoryPage";
 import InventoryTable from "../Pages/Inventory/InventoryTable";
 import OrganizationStructure from "../Pages/Organization/OrganizationStructure";
 import PortfolioPage from "../Pages/Portfolio/PortfolioPage";
-import FifthProblemDataTable from "../Pages/Warehouse/FifthProblemDataTable";
+import WarehouseDataTable from "../Pages/Warehouse/WareHouseDataTable";
 
 export const router: any = createBrowserRouter([
   {
@@ -36,7 +36,7 @@ export const router: any = createBrowserRouter([
       },
       {
         path: "/warehouse",
-        element: <FifthProblemDataTable />,
+        element: <WarehouseDataTable />,
       },
       {
         path: "/factory",

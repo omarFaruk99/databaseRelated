@@ -18,7 +18,7 @@ interface Response {
   };
 }
 
-export default function FifthProblemDataTable() {
+export default function WarehouseDataTable() {
   const [data, setData] = useState<Response | null>(null);
   const [expandedRows, setExpandedRows] = useState<
     DataTableExpandedRows | DataTableValueArray | undefined
@@ -32,7 +32,7 @@ export default function FifthProblemDataTable() {
       try {
         setLoading(true);
         setError(null);
-        const response = await fetch("/demo/data/warehouse.json");
+        const response = await fetch("/demo/data/dataProblemFive.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
